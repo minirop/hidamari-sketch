@@ -1,0 +1,12 @@
+build/
+extract/CO6J/
+*.nds
+tools/mwccarm/
+arm7_bios.bin
+.ninja_deps
+.ninja_log
+dsd
+objdiff*
+build.ninja
+*.pyc
+wibo

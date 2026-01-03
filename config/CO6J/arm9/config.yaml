@@ -1,0 +1,26 @@
+rom_config: '../../../extract/CO6J/config.yaml'
+build_path: '../../../build/CO6J'
+delinks_path: '../../../build/CO6J/delinks'
+main_module:
+  name: main
+  object: '../../../build/CO6J/build/arm9.bin'
+  hash: '2bd803c3d67d2105'
+  delinks: delinks.txt
+  symbols: symbols.txt
+  relocations: relocs.txt
+autoloads:
+- kind: Itcm
+  name: itcm
+  object: '../../../build/CO6J/build/itcm.bin'
+  hash: '196138a34e0dc83f'
+  delinks: itcm/delinks.txt
+  symbols: itcm/symbols.txt
+  relocations: itcm/relocs.txt
+- kind: Dtcm
+  name: dtcm
+  object: '../../../build/CO6J/build/dtcm.bin'
+  hash: '9cf0edf8a0574378'
+  delinks: dtcm/delinks.txt
+  symbols: dtcm/symbols.txt
+  relocations: dtcm/relocs.txt
+overlays: []
