@@ -6,9 +6,9 @@
     .data       start:0x020f93c0 end:0x02147100 kind:data align:32
     .bss        start:0x02147100 end:0x02155900 kind:bss align:32
 
-src/main.cpp:
+src/main.c:
     complete
     .text       start:0x02000c00 end:0x02000c3c
 
-src/file_02000c3c.cpp:
-    .text       start:0x02000c3c end:0x02000c94
+src/file_02000c3c.c:
+    .text       start:0x02000c3c end:0x02000d78
