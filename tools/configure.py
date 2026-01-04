@@ -150,7 +150,7 @@ class Project:
         ]
 
     def arm9_lcf(self) -> Path:
-        return self.game_build / "linker_script.lcf"
+        return self.game_build / "arm9.lcf"
 
     def arm9_objects_txt(self) -> Path:
         return self.game_build / "objects.txt"

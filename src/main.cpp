@@ -1,3 +1,5 @@
+#include "global.h"
+
 extern "C" void func_02033db0(void*);
 extern "C" void func_02033e9c(void*);
 extern "C" void func_02033e5c(void*);
