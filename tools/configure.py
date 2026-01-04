@@ -21,7 +21,7 @@ args = parser.parse_args()
 
 # Config
 GAME = "hidamari"
-DSD_VERSION = 'v0.6.0'
+DSD_VERSION = 'v0.10.2'
 WIBO_VERSION = '0.6.16'
 OBJDIFF_VERSION = 'v2.7.1'
 MWCC_VERSION = "2.0/sp2p2"
@@ -221,7 +221,7 @@ def main():
 
         n.rule(
             name="lcf",
-            command=f"{DSD} lcf -c $config_path --lcf-file $lcf_file --objects-file $objects_file"
+            command=f"{DSD} lcf -c $config_path"
         )
         n.newline()
 
