@@ -11,4 +11,4 @@ src/main.c:
     .text       start:0x02000c00 end:0x02000c3c
 
 src/file_02000c3c.c:
-    .text       start:0x02000c3c end:0x02000dc8
+    .text       start:0x02000c3c end:0x02001044
