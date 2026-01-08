@@ -1,16 +1,6 @@
-#include "global.h"
+#include "functions.h"
 
-void func_02033db0(void*);
-void func_02033e9c(void*);
-void func_02033e5c(void*);
-void func_020339c4();
-void func_020080fc();
-void func_0200704c();
-void func_020338f8();
-void main();
-void func_02000c2c();
-
-extern unsigned int data_021539b8;
+extern struct_data_021539b8 data_021539b8;
 
 void main()
 {

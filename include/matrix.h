@@ -3,18 +3,16 @@
 
 #include "global.h"
 
-struct Matrix33 {
+typedef struct Matrix33 {
 	s32 data[9];
-};
+} Matrix33;
 
-struct Matrix43 {
+typedef struct Matrix43 {
 	s32 data[12];
-};
+} Matrix43;
 
-struct Matrix44 {
+typedef struct Matrix44 {
 	s32 data[16];
-};
-
-void func_02000d78(struct Matrix33* matrix, s32 sin_theta, s32 cos_theta);
+} Matrix44;
 
 #endif
