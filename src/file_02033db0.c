@@ -28,11 +28,10 @@ void func_02033e5c(struct_data_021539b8* param_1)
     param_1->unk_1e20 = 0;
     func_0200d710(&param_1->unk_1e24);
     func_0200d728(&param_1->unk_1e30);
-    if (param_1->unk_04 == 0)
+    if (param_1->unk_04 != 0)
     {
-        return;
+        func_02033a84(param_1->unk_04);
     }
-    func_02033a84();
 }
 
 void func_02033e9c(struct_data_021539b8* param_1)

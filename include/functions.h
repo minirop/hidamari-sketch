@@ -3,6 +3,7 @@
 
 #include "global.h"
 #include "struct_data_021539b8.h"
+#include "struct_unk_HTNU_HPXE_format.h"
 #include "matrix.h"
 
 void func_02000c2c();
@@ -15,10 +16,14 @@ void func_02007b4c();
 void func_02007f18();
 void func_020080fc();
 void func_0200810c();
+void func_0200d5f8(s32*, callback*);
+void func_0200d60c(s32*, callback*);
+void func_0200d658(s32*, callback*);
 void func_0200d710(callback*);
 void func_0200d728(callback*);
 void func_0200d740();
 void func_0201557c(s32);
+struct_unk_HTNU_HPXE_format* func_02015594(s32);
 void func_02015adc(s32);
 void func_02015eb8(s32);
 void func_0202f3c8(struct_data_021539b8_41c*);
@@ -27,7 +32,7 @@ void func_02031b30(struct_data_021539b8_404*);
 void func_0203222c(struct_data_021539b8_58*);
 void func_020338f8();
 void func_020339c4();
-void func_02033a84();
+void func_02033a84(int);
 void func_02033db0(struct_data_021539b8*);
 void func_02033e5c(struct_data_021539b8* param_1);
 void func_02033e9c(struct_data_021539b8* param_1);
