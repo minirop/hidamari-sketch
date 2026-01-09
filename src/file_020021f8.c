@@ -4,12 +4,14 @@ void func_02002330();
 void func_020022d4();
 void func_0200229c();
 
+// has 2 params passed to func_02002330
 void func_020021f8()
 {
     func_02002330();
     func_0200229c();
 }
 
+// has 1 param passed to func_020022d4
 void func_02002208()
 {
     func_020022d4();
@@ -17,10 +19,11 @@ void func_02002208()
 }
 
 // https://decomp.me/scratch/DBGU7
-asm s64 func_02002218(void)
+// has 1 param passed to func_020022d4 (but doesn't change the scratch)
+asm s64 func_02002218()
 {
 /*
-    func_020022d4();
+    func_020022d4(param_1);
     while (REG_DIVCNT & 0x8000)
     {
     }

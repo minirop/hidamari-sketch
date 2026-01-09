@@ -3,6 +3,9 @@
 
 #include "global.h"
 
+typedef struct struct_data_021539b8_04 {
+    struct struct_data_021539b8_04* unk_00; // linked list???
+} struct_data_021539b8_04;
 typedef struct struct_data_021539b8_30 {
     s32 unk_0x00;
     s32 unk_0x04; // might be
@@ -37,7 +40,7 @@ typedef struct struct_data_021539b8_41c {
 
 typedef struct struct_data_021539b8 {
 	s32 unk_00;
-	s32 unk_04;
+	struct_data_021539b8_04* unk_04;
 	STRUCT_PAD(0x08, 0x30);
 	struct_data_021539b8_30 unk_30;
 	STRUCT_PAD(0x54, 0x58);

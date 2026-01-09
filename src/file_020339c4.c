@@ -45,7 +45,7 @@ LAB_02033a68:
     ldmia      sp!,{r3,r4,r5,pc}
 }
 
-void func_02033a84(int param_1)
+void func_02033a84(struct_data_021539b8_04* param_1)
 {
     struct_unk_HTNU_HPXE_format* format;
 
