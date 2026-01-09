@@ -27,4 +27,6 @@ typedef volatile f32 vf32;
 
 #define STRUCT_PAD(from, to) unsigned char _pad_ ## from[(to) - (from)]
 
+typedef void (*callback)();
+
 #endif

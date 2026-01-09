@@ -31,8 +31,14 @@ typedef struct struct_data_021539b8_404 {
 	s32 unk_14;
 } struct_data_021539b8_404;
 
+typedef struct struct_data_021539b8_41c {
+	STRUCT_PAD(0x00, 0x800);
+} struct_data_021539b8_41c;
+
 typedef struct struct_data_021539b8 {
-	STRUCT_PAD(0x00, 0x30);
+	s32 unk_00;
+	s32 unk_04;
+	STRUCT_PAD(0x08, 0x30);
 	struct_data_021539b8_30 unk_30;
 	STRUCT_PAD(0x54, 0x58);
 	struct_data_021539b8_58 unk_58;
@@ -40,15 +46,16 @@ typedef struct struct_data_021539b8 {
 	s32 unk_2e4;
 	STRUCT_PAD(0x2e8, 0x404);
 	struct_data_021539b8_404 unk_404;
-	STRUCT_PAD(0x41C, 0x1e20);
+	struct_data_021539b8_41c unk_41c;
+	STRUCT_PAD(0xc1c, 0x1e20);
 	s8 unk_1e20;
 	s8 unk_1e21;
 	s8 unk_1e22;
 	s8 unk_1e23;
-	void (*unk_1e24)();
+	callback unk_1e24;
 	s32 unk_1e28;
 	s32 unk_1e2C;
-	void (*unk_1e30)();
+	callback unk_1e30;
 	s32 unk_1e34;
 } struct_data_021539b8;
 

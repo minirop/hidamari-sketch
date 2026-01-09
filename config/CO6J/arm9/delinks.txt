@@ -16,5 +16,11 @@ src/file_02000c3c.c:
 src/file_020021f8.c:
     .text       start:0x020021f8 end:0x02002278
 
+src/file_020080fc.c:
+    .text       start:0x020080fc end:0x0200810c
+
+src/file_020339c4.c:
+    .text       start:0x020339c4 end:0x02033a40
+
 src/file_02033db0.c:
-    .text       start:0x02033db0 end:0x02033e5c
+    .text       start:0x02033db0 end:0x02033ec8
