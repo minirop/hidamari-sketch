@@ -14,16 +14,22 @@ src/file_02000c3c.c:
     .text       start:0x02000c3c end:0x02001840
 
 src/file_020021f8.c:
-    .text       start:0x020021f8 end:0x02002278
+    .text       start:0x020021f8 end:0x0200229c
 
 src/file_0200282c.c:
     .text       start:0x0200282c end:0x02002830
+
+src/file_02007a20.c:
+    .text       start:0x02007a20 end:0x02007ac0
 
 src/file_020080fc.c:
     .text       start:0x020080fc end:0x0200810c
 
 src/file_0200810c.c:
     .text       start:0x0200810c end:0x02008118
+
+src/file_0200d60c.c:
+    .text       start:0x0200d60c end:0x0200d658
 
 src/file_0200d6c8.c:
     .text       start:0x0200d6c8 end:0x0200d7ac
@@ -51,3 +57,6 @@ src/file_020339c4.c:
 
 src/file_02033db0.c:
     .text       start:0x02033db0 end:0x02033ec8
+
+src/file_020369a0.c:
+    .text       start:0x020369a0 end:0x020369d0

@@ -49,9 +49,27 @@ int func_02002244(s32 value)
     if (value > 0)
     {
         REG_SQRT_CNT = 1;
-        REG_SQRT_PARAM = value << 32;
+        REG_SQRT_PARAM_LO = 0;
+        REG_SQRT_PARAM_HI = value;
         return func_02002304();
     }
 
     return 0;
+}
+
+asm u64 func_02002278()
+{
+/*
+    do {
+    } while ((REG_DIVCNT & 0x8000) != 0);
+    return DIV_RESULT;
+*/
+    ldr        r1,=0x04000280
+LAB_0200227c:
+    ldrh       r0,[r1,#0x0]
+    tst        r0,#0x8000
+    bne        LAB_0200227c
+    ldr        r1,=0x040002A0
+    ldmia      r1,{r0,r1}
+    bx         lr
 }

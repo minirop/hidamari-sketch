@@ -6,12 +6,6 @@ void func_02031b30(struct_data_021539b8_404* param)
     func_02031b48(param);
 }
 
-s32 func_0200609c();
-s32 func_0200e248();
-s32 func_0200e950(s32);
-void func_0200e2a4(u16);
-void func_02006104(u16);
-void func_0200e294(u16);
 bool func_02031b48(struct_data_021539b8_404* param)
 {
     bool ret = false;

@@ -6,17 +6,17 @@
 typedef struct struct_data_021539b8_04 {
     struct struct_data_021539b8_04* unk_00; // linked list???
 } struct_data_021539b8_04;
+
 typedef struct struct_data_021539b8_30 {
-    s32 unk_0x00;
-    s32 unk_0x04; // might be
-    s32 unk_0x08; // s64
-    s32 unk_0x0c;
-    s32 unk_0x10;
-    s32 unk_0x14;
-    s32 unk_0x18;
-    s32 unk_0x1c;
-    s32 unk_0x20;
-    s32 unk_0x24;
+    s32 unk_00;
+    u64 unk_04;
+    s32 unk_0c;
+    s32 unk_10;
+    s32 unk_14;
+    s32 unk_18;
+    s32 unk_1c;
+    s32 unk_20;
+    s32 unk_24;
 } struct_data_021539b8_30;
 
 typedef struct struct_data_021539b8_58 {
@@ -89,6 +89,17 @@ typedef struct struct_data_021539b8_41c {
     u8 unk_11ab;
 } struct_data_021539b8_41c;
 
+typedef struct struct_data_021539b8_callback {
+    callback unk_00;
+    s32 unk_04;
+    struct struct_data_021539b8_callback* unk_08;
+} struct_data_021539b8_callback;
+
+// because of func_0200d60c (name is random)
+typedef struct struct_data_021539b8_callback_list {
+    struct_data_021539b8_callback* unk_00;
+} struct_data_021539b8_callback_list;
+
 typedef struct struct_data_021539b8 {
     s32 unk_00;
     struct_data_021539b8_04* unk_04;
@@ -105,11 +116,8 @@ typedef struct struct_data_021539b8 {
     s8 unk_1e21;
     s8 unk_1e22;
     s8 unk_1e23;
-    callback unk_1e24;
-    s32 unk_1e28;
-    s32 unk_1e2C;
-    callback unk_1e30;
-    s32 unk_1e34;
+    struct_data_021539b8_callback unk_1e24;
+    struct_data_021539b8_callback unk_1e30;
 } struct_data_021539b8;
 
 #endif
