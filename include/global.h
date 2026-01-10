@@ -25,8 +25,16 @@ typedef volatile s64 vs64;
 typedef float f32;
 typedef volatile f32 vf32;
 
+typedef s32 bool;
+#define true 1
+#define false 0
+
 #define STRUCT_PAD(from, to) unsigned char _pad_ ## from[(to) - (from)]
+#define STRUCT_PAD_SIZED(from, to, name) unsigned char _pad_ ## from[(to) - (from) - sizeof(name)]
 
 typedef void (*callback)();
+typedef void (*callback_0200a280)(s32, s32, s32);
+
+#include "hardware.h"
 
 #endif

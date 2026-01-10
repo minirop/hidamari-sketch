@@ -26,7 +26,10 @@ src/file_0200810c.c:
     .text       start:0x0200810c end:0x02008118
 
 src/file_0200d6c8.c:
-    .text       start:0x0200d6c8 end:0x0200d740
+    .text       start:0x0200d6c8 end:0x0200d7ac
+
+src/file_0200e2a4.c:
+    .text       start:0x0200e2a4 end:0x0200e2cc
 
 src/file_02015444.c:
     .text       start:0x02015444 end:0x020155ac
@@ -36,6 +39,12 @@ src/file_02015b18.c:
 
 src/file_02015f04.c:
     .text       start:0x02015f04 end:0x02015f14
+
+src/file_0202f3c8.c:
+    .text       start:0x0202f3c8 end:0x0202f668
+
+src/file_02031b30.c:
+    .text       start:0x02031b30 end:0x02031bbc
 
 src/file_020339c4.c:
     .text       start:0x020339c4 end:0x02033ae4

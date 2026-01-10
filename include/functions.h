@@ -5,6 +5,7 @@
 #include "struct_data_021539b8.h"
 #include "struct_unk_HTNU_HPXE_format.h"
 #include "struct_data_0214a748.h"
+#include "struct_data_021539b8.h"
 #include "matrix.h"
 
 void func_02000c2c();
@@ -30,6 +31,8 @@ void func_02015eb8(s32);
 void func_0202f3c8(struct_data_021539b8_41c*);
 void func_0202f578(struct_data_021539b8_41c*);
 void func_02031b30(struct_data_021539b8_404*);
+void func_02031e58(struct_data_021539b8_404*);
+bool func_02031b48(struct_data_021539b8_404*);
 void func_0203222c(struct_data_021539b8_58*);
 void func_020338f8();
 void func_020339c4();
@@ -47,5 +50,7 @@ void func_02034158();
 void func_020369a0(struct_data_021539b8_30*);
 void func_02036aec();
 void main();
+void func_0200a174();
+void func_0200a280(s32, callback_0200a280);
 
 #endif

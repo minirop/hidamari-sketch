@@ -1,4 +1,4 @@
-#include "hardware.h"
+#include "functions.h"
 
 void func_02002330();
 void func_020022d4();

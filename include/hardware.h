@@ -13,5 +13,6 @@
 #define REG_SQRT_CNT (*(vu32 *)0x040002b0)
 #define REG_SQRT_RESULT (*(vu32 *)0x040002b4)
 #define REG_SQRT_PARAM (*(vu64 *)0x040002b8)
+#define GFX_FIFO_SWAP (*(vu32 *)0x04000540)
 
 #endif
