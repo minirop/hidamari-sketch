@@ -20,5 +20,6 @@
 #define REG_TIM1CNT_L (*(vu16 *)0x04000104)
 #define REG_TIM1CNT_H (*(vu16 *)0x04000106)
 #define REG_IF (*(vu32 *)0x04000214)
+#define REG_WRAM_CNT (*(vu8 *)0x04000247)
 
 #endif

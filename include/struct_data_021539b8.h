@@ -38,7 +38,10 @@ typedef struct struct_data_021539b8_404 {
     u8 unk_03;
     s32 unk_04;
     s32 unk_08;
-    s32 unk_0C;
+    u8 unk_0c;
+    u8 unk_0d;
+    u8 unk_0e;
+    u8 unk_0f;
     s32 unk_10;
     s32 unk_14;
 } struct_data_021539b8_404;
@@ -47,15 +50,19 @@ typedef struct struct_func_0202c138 {
     u32 unk_00;
 } struct_func_0202c138;
 
+typedef struct struct_data_021539b8_41c_14 struct_data_021539b8_41c_14;
+
 typedef struct struct_data_021539b8_41c_14_00 {
-    STRUCT_PAD(0x00, 0x0c);
+    STRUCT_PAD(0x00, 0x04);
+    callback unk_04;
+    void (*unk_08)(struct struct_data_021539b8_41c_14*, u32);
     callback unk_0c;
     callback unk_10;
 } struct_data_021539b8_41c_14_00;
 
-typedef struct struct_data_021539b8_41c_14 {
+struct struct_data_021539b8_41c_14 {
     struct_data_021539b8_41c_14_00* unk_00;
-} struct_data_021539b8_41c_14;
+};
 
 typedef struct struct_data_021539b8_41c_7c4 {
     u32 unk_00;
@@ -74,7 +81,11 @@ typedef struct struct_data_021539b8_41c {
     struct_func_0202c138* unk_32c;
     STRUCT_PAD(0x330, 0x7c4);
     struct_data_021539b8_41c_7c4 unk_7c4;
-    STRUCT_PAD_SIZED(0x7c4, 0x10b8, struct_data_021539b8_41c_7c4);
+    STRUCT_PAD_SIZED(0x7c4, 0x10b4, struct_data_021539b8_41c_7c4);
+    u8 unk_10b4;
+    u8 unk_10b5;
+    u8 unk_10b6;
+    u8 unk_10b7;
     struct_func_0202c138* unk_10b8;
     STRUCT_PAD(0x10bc, 0x10d8);
     struct_func_0202c138* unk_10d8;

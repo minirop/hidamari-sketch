@@ -6,3 +6,8 @@ asm void func_0200810c()
     mcr p15, 0, r0, c7, c0, 4
     bx  lr
 }
+
+void func_02008118(u8 data)
+{
+    REG_WRAM_CNT = data;
+}
