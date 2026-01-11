@@ -25,7 +25,7 @@ asm void func_0201545c()
     bx         lr
 }
 
-struct_unk_HTNU_HPXE_format* func_02015470(struct_data_0214a748* param_1, struct_data_021539b8_04* param_2)
+struct_unk_HTNU_HPXE_format* func_02015470(struct_data_0214a748* param_1, struct_data_02153964* param_2)
 {
     struct_unk_HTNU_HPXE_format* uVar1 = func_02015444(param_1, 0);
     while (uVar1 != 0)
@@ -46,18 +46,16 @@ struct_unk_HTNU_HPXE_format* func_02015470(struct_data_0214a748* param_1, struct
     return 0;
 }
 
-// on hold
-asm void func_020154d8()
+struct_data_0214a748* func_020154d8(struct_data_02153964* param)
 {
-    stmdb      sp!,{r4,lr}
-    ldr        r4,=data_0214a748
-    mov        r1,r0
-    mov        r0,r4
-    bl         func_02015470
-    cmp        r0,#0x0
-    addne      r4,r0,#0xc
-    mov        r0,r4
-    ldmia      sp!,{r4,pc}
+    struct_data_0214a748* ptr = &data_0214a748;
+    struct_unk_HTNU_HPXE_format* format = func_02015470(&data_0214a748, param);
+    if (format != 0)
+    {
+        ptr = &format->unk_0c;
+    }
+
+    return ptr;
 }
 
 // on hold
@@ -105,7 +103,7 @@ void func_0201557c(struct_data_02153964* param)
     func_020153e4(uVar1, param);
 }
 
-struct_unk_HTNU_HPXE_format* func_02015594(struct_data_021539b8_04* param)
+struct_unk_HTNU_HPXE_format* func_02015594(struct_data_02153964* param)
 {
     return func_02015470(&data_0214a748, param);
 }

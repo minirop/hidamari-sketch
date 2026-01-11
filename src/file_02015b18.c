@@ -1,7 +1,7 @@
 #include "functions.h"
 
 // fake match
-void func_02015b18(struct_unk_HTNU_HPXE_format* format, struct_data_021539b8_04* param_2)
+void func_02015b18(struct_unk_HTNU_HPXE_format* format, struct_data_02153964* param_2)
 {
     u32 auStack_18[2];
     struct_data_021539b8* sub4 = (struct_data_021539b8*)(param_2 - 4);

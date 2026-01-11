@@ -2,10 +2,7 @@
 #define STRUCT_DATA_021539B8_H
 
 #include "global.h"
-
-typedef struct struct_data_021539b8_04 {
-    struct struct_data_021539b8_04* unk_00; // linked list???
-} struct_data_021539b8_04;
+#include "struct_data_02153964.h"
 
 typedef struct struct_data_021539b8_30 {
     s32 unk_00;
@@ -125,7 +122,7 @@ typedef struct struct_data_021539b8_callback_list {
 
 typedef struct struct_data_021539b8 {
     s32 unk_00;
-    struct_data_021539b8_04* unk_04;
+    struct_data_02153964* unk_04;
     STRUCT_PAD(0x08, 0x30);
     struct_data_021539b8_30 unk_30;
     struct_data_021539b8_58 unk_58;

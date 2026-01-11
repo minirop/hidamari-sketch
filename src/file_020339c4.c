@@ -35,7 +35,7 @@ struct_data_021539b8_41c_14* func_02033a40(u32 param_1, s32 param_2)
     return func_02015ae8(data_02153964[1], param_1, param_2);
 }
 
-void func_02033a84(struct_data_021539b8_04* param_1)
+void func_02033a84(struct_data_02153964* param_1)
 {
     struct_unk_HTNU_HPXE_format* format;
 
