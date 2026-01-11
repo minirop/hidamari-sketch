@@ -1,6 +1,6 @@
 #include "functions.h"
 
-extern int data_02153964[];
+extern struct_data_02153964* data_02153964[];
 
 void func_020339c4()
 {
@@ -21,28 +21,18 @@ void func_020339c4()
     }
 }
 
-void func_02015ec4();
-void func_02015ae8();
-// on hold until called
-asm void func_02033a40()
+struct_data_021539b8_41c_14* func_02033a40(u32 param_1, s32 param_2)
 {
-    stmdb      sp!,{r3,r4,r5,lr}
-    mov        r5,r0
-    mov        r4,r1
-    cmp        r5,#0x20
-    bhi        LAB_02033a68
-    ldr        r0,=data_02153964
-    ldr        r0,[r0,#0x8]
-    bl         func_02015ec4
-    cmp        r0,#0x0
-    ldmneia    sp!,{r3,r4,r5,pc}
-LAB_02033a68:
-    ldr        r0,=data_02153964
-    mov        r1,r5
-    ldr        r0,[r0,#0x4]
-    mov        r2,r4
-    bl         func_02015ae8
-    ldmia      sp!,{r3,r4,r5,pc}
+    if (param_1 <= 32)
+    {
+        struct_data_021539b8_41c_14* ptr = func_02015ec4(data_02153964[2]);
+        if (ptr != 0)
+        {
+            return ptr;
+        }
+    }
+
+    return func_02015ae8(data_02153964[1], param_1, param_2);
 }
 
 void func_02033a84(struct_data_021539b8_04* param_1)

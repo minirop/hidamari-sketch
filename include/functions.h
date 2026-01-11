@@ -6,13 +6,14 @@
 #include "struct_unk_HTNU_HPXE_format.h"
 #include "struct_data_0214a748.h"
 #include "struct_data_021539b8.h"
+#include "struct_data_02153964.h"
 #include "matrix.h"
 
 void func_02000c2c();
 void func_02000d78(struct Matrix33* matrix, s32 sin_theta, s32 cos_theta);
 void func_0200282c();
 void func_0200704c();
-void func_02007640(s32, s32, s32);
+void func_02007640(s32, s32, struct_data_02153964*);
 void func_02007930();
 void func_02007b4c();
 u32 func_02007f18();
@@ -24,10 +25,10 @@ void func_0200d658(struct_data_021539b8_callback_list*, struct_data_021539b8_cal
 void func_0200d710(struct_data_021539b8_callback*);
 void func_0200d728(struct_data_021539b8_callback*);
 void func_0200d740();
-void func_0201557c(s32);
+void func_0201557c(struct_data_02153964* param);
 struct_unk_HTNU_HPXE_format* func_02015594(struct_data_021539b8_04*);
-void func_02015adc(s32);
-void func_02015eb8(s32);
+void func_02015adc(struct_data_02153964*);
+void func_02015eb8(struct_data_02153964*);
 void func_0202f3c8(struct_data_021539b8_41c*);
 void func_0202f578(struct_data_021539b8_41c*);
 void func_02031b30(struct_data_021539b8_404*);
@@ -69,7 +70,10 @@ struct_data_021539b8_41c_14* func_0202ffa4();
 struct_data_021539b8_41c_14* func_0204cf30();
 struct_data_021539b8_41c_14* func_020a6b4c();
 struct_data_021539b8_41c_14* func_02031254();
-struct_data_021539b8_41c_14* func_02033c4c();
 struct_data_021539b8_41c_14* func_020a8450();
+struct_data_021539b8_41c_14* func_0208d7a4();
+void func_0202fa10(struct_data_021539b8_41c* param);
+struct_data_021539b8_41c_14* func_02015ec4(s32);
+struct_data_021539b8_41c_14* func_02015ae8(s32, u32, s32);
 
 #endif

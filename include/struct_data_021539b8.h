@@ -50,6 +50,14 @@ typedef struct struct_func_0202c138 {
     u32 unk_00;
 } struct_func_0202c138;
 
+typedef struct struct_func_02039c5c {
+    s32 unk_00;
+    s32 unk_04;
+    s32 unk_08;
+    s32 unk_0c;
+    s32 unk_10;
+} struct_func_02039c5c;
+
 typedef struct struct_data_021539b8_41c_14 struct_data_021539b8_41c_14;
 
 typedef struct struct_data_021539b8_41c_14_00 {
@@ -79,7 +87,11 @@ typedef struct struct_data_021539b8_41c {
     u32 unk_fc;
     STRUCT_PAD(0x100, 0x32c);
     struct_func_0202c138* unk_32c;
-    STRUCT_PAD(0x330, 0x7c4);
+    STRUCT_PAD(0x330, 0x79c);
+    struct_func_0202c138 unk_79c;
+    STRUCT_PAD_SIZED(0x79c, 0x7b0, struct_func_0202c138);
+    struct_func_0202c138 unk_7b0;
+    STRUCT_PAD_SIZED(0x7b0, 0x7c4, struct_func_0202c138);
     struct_data_021539b8_41c_7c4 unk_7c4;
     STRUCT_PAD_SIZED(0x7c4, 0x10b4, struct_data_021539b8_41c_7c4);
     u8 unk_10b4;

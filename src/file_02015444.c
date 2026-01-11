@@ -98,16 +98,11 @@ LAB_02015560:
     ldmia      sp!,{r4,pc}
 }
 
-// on hold
-void func_020153e4();
-asm void func_0201557c(s32 param_1)
+void func_020153e4(s32, struct_data_02153964*);
+void func_0201557c(struct_data_02153964* param)
 {
-    stmdb      sp!,{r4,lr}
-    mov        r4,r0
-    bl         func_020154d8
-    mov        r1,r4
-    bl         func_020153e4
-    ldmia      sp!,{r4,pc}
+    struct_data_0214a748* uVar1 = func_020154d8(param);
+    func_020153e4(uVar1, param);
 }
 
 struct_unk_HTNU_HPXE_format* func_02015594(struct_data_021539b8_04* param)
