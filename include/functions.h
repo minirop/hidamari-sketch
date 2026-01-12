@@ -7,6 +7,7 @@
 #include "struct_data_0214a748.h"
 #include "struct_data_021539b8.h"
 #include "struct_data_02153964.h"
+#include "struct_temps.h"
 #include "matrix.h"
 
 void func_02000c2c();

@@ -40,8 +40,11 @@ src/file_0200d6c8.c:
 src/file_0200e2a4.c:
     .text       start:0x0200e2a4 end:0x0200e2cc
 
-src/file_02015444.c:
-    .text       start:0x02015444 end:0x020155ac
+src/file_020153e4.c:
+    .text       start:0x020153e4 end:0x02015600
+
+src/file_020159b4.c:
+    .text       start:0x020159b4 end:0x02015aa4
 
 src/file_02015b18.c:
     .text       start:0x02015b18 end:0x02015b54

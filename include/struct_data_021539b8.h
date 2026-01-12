@@ -121,7 +121,8 @@ typedef struct struct_data_021539b8_callback_list {
 } struct_data_021539b8_callback_list;
 
 typedef struct struct_data_021539b8 {
-    s32 unk_00;
+    u16 unk_00;
+    u16 unk_02;
     struct_data_02153964* unk_04;
     STRUCT_PAD(0x08, 0x30);
     struct_data_021539b8_30 unk_30;

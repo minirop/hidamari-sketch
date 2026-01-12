@@ -14,7 +14,7 @@ typedef struct struct_unk_HTNU_HPXE_format {
     STRUCT_PAD(0x20, 0x24);
     struct_data_02153964* unk_24;
     STRUCT_PAD(0x28, 0x2c);
-    u32 unk_2c;
+    u32 unk_2c[2];
 } struct_unk_HTNU_HPXE_format;
 
 #endif

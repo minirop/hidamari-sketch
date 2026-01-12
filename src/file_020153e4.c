@@ -2,6 +2,34 @@
 
 extern struct_data_0214a748 data_0214a748;
 
+void func_020153e4(struct_data_0214a748* param_1, struct_data_02153964* param_2)
+{
+    struct_unk_HTNU_HPXE_format ** array = ((struct_unk_HTNU_HPXE_format**)(((u8*)param_2) + param_1->unk_0a));
+    if (array[0] == 0)
+    {
+        param_1->unk_00 = array[1];
+    }
+    else
+    {
+        // fake match
+        ((struct_unk_HTNU_HPXE_format*)(((u8*)array) + param_1->unk_0a))->unk_04 = array[1];
+    }
+
+    if (array[1] == 0)
+    {
+        param_1->unk_04 = array[0];
+    }
+    else
+    {
+        // fake match
+        *((struct_unk_HTNU_HPXE_format**)(((u8*)array[1]) + param_1->unk_0a)) = array[0];
+    }
+
+    array[0] = 0;
+    array[1] = 0;
+    param_1->unk_08--;
+}
+
 struct_unk_HTNU_HPXE_format* func_02015444(struct_data_0214a748* param_1, struct_unk_HTNU_HPXE_format* param_2)
 {
     if (param_2 == 0)
@@ -15,7 +43,6 @@ struct_unk_HTNU_HPXE_format* func_02015444(struct_data_0214a748* param_1, struct
         return ((struct_unk_HTNU_HPXE_format*)(((u8*)param_2) + unk_0a))->unk_04;
     }
 }
-
 asm void func_0201545c()
 {
     cmp        r1,#0x0
@@ -96,7 +123,6 @@ LAB_02015560:
     ldmia      sp!,{r4,pc}
 }
 
-void func_020153e4(s32, struct_data_02153964*);
 void func_0201557c(struct_data_02153964* param)
 {
     struct_data_0214a748* uVar1 = func_020154d8(param);
@@ -106,4 +132,37 @@ void func_0201557c(struct_data_02153964* param)
 struct_unk_HTNU_HPXE_format* func_02015594(struct_data_02153964* param)
 {
     return func_02015470(&data_0214a748, param);
+}
+
+void func_020155ac(u32* param_1, struct_temp_02015b18* param_2)
+{
+    param_1[0] = (param_2->unk_02 >> 8) & 0x7f;
+    param_1[1] = *(param_2->unk_10 + param_2->unk_04);
+}
+
+// another sort of linked list?
+struct_temp_02015b18_08_0c* func_020155d8(struct_temp_02015b18_08_0c** param_1, struct_temp_02015b18* param_2)
+{
+    struct_temp_02015b18_08_0c* r2 = param_2->unk_08;
+    struct_temp_02015b18_08_0c* r1 = param_2->unk_0c;
+
+    if (r2)
+    {
+        r2->unk_0c = r1;
+    }
+    else
+    {
+        param_1[0] = r1;
+    }
+
+    if (r1)
+    {
+        r1->unk_08 = r2;
+    }
+    else
+    {
+        param_1[1] = r2;
+    }
+
+    return r2;
 }
